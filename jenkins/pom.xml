@@ -7,6 +7,7 @@
   <groupId>company.maven</groupId>
   <artifactId>jenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <name>jenkins</name>
   <!-- FIXME change it to the project's website -->
@@ -69,6 +70,10 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+		    <artifactId>maven-war-plugin</artifactId>
+		    <version>3.3.2</version>
+		</plugin>
       </plugins>
     </pluginManagement>
   </build>
