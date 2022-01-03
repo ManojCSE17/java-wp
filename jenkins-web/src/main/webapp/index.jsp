@@ -14,7 +14,7 @@ Multiplication table of 2<br><br>
 
 <% 
 	for(int i=1;i<=10;i++){
-		out.println(2+" x "+i+" = "+(2*i));
+		out.println(2+" x "+i+" = "+(2*i)+"<br>");
 	}
 %>
 
