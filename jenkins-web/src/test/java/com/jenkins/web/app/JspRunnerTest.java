@@ -9,12 +9,12 @@ import org.junit.Test;
 public class JspRunnerTest {
 
 	@BeforeClass
-	public void beforeTest() {
+	public static void beforeTest() {
 		System.out.println("[INFO] Running JspRunnerTest");
 	}
 
 	@AfterClass
-	public void afterTest() {
+	public static void afterTest() {
 		System.out.println("[INFO] Finished JspRunnerTest");
 	}
 
