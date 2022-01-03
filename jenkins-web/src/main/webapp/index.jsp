@@ -1,3 +1,5 @@
+<%@page import="com.jenkins.web.app.JspRunner" %>
+
 <html>
 <body>
 <h2>JSP Basic</h2>
@@ -25,6 +27,8 @@ Multiplication table of 2<br><br>
 %>
 
 <br> Lower case of "Hello" : <%= toLower("Hello") %>
+
+<br><br> Lower case of "Hello" with java JspRunner class : <%= JspRunner.toLower("Hello") %>
 
 </body>
 </html>
