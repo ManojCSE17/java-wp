@@ -2,26 +2,26 @@ package com.jenkins.web.app;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class JspRunnerTest {
 
-	@Before
+	@BeforeClass
 	public void beforeTest() {
-		System.out.println("Before Test");
+		System.out.println("[INFO] Running JspRunnerTest");
 	}
 
-	@After
+	@AfterClass
 	public void afterTest() {
-		System.out.println("After Test");
+		System.out.println("[INFO] Finished JspRunnerTest");
 	}
 
 	@Test
-	public void test() {
+	public void toLowerTest() {
+		System.out.println("[INFO] Running toLowerTest");
 		assertEquals("hello", JspRunner.toLower("Hello"));
-		// fail("Not yet implemented");
 	}
 
 }

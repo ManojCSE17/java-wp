@@ -9,9 +9,9 @@
 	
 	<h1>Built-In Request Object</h1><br><br>
 	
-	<h3>Request User Agent : <%= request.getHeader("User-Agent") %></h3><br>
+	<h2>Request User Agent : <%= request.getHeader("User-Agent") %></h2><br>
 	
-	<h3>Request User Language : <%= request.getLocale() %></h3><br>
+	<h2>Request User Language : <%= request.getLocale() %></h2><br>
 	
 </body>
 </html>

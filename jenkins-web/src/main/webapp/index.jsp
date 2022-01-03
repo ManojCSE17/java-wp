@@ -30,7 +30,7 @@
 	
 	<br><br> Lower case of "Hello" with java JspRunner class : <%= JspRunner.toLower("Hello") %>
 
-	<br><br> <h3>Built-In request object</h3> <a href="built-in-request.jsp">Click Here</a>
+	<br><br> <h3>Built-In request object <a href="built-in-request.jsp">Click Here</a></h3> 
 
 </body>
 </html>
