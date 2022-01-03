@@ -22,8 +22,6 @@ Multiplication table of 2<br><br>
 	String toLower(String w){
 		return w.toLowerCase();
 	}
-}
-
 %>
 
 <br> Lower case of "Hello" : <%= toLower("Hello") %>
