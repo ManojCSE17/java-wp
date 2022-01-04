@@ -10,17 +10,17 @@ public class JspRunnerTest {
 
 	@BeforeClass
 	public static void beforeTest() {
-		System.out.println("[INFO] Running JspRunnerTest");
+		System.out.println("[TEST] Running JspRunnerTest");
 	}
 
 	@AfterClass
 	public static void afterTest() {
-		System.out.println("[INFO] Finished JspRunnerTest");
+		System.out.println("[TEST] Finished JspRunnerTest");
 	}
 
 	@Test
 	public void toLowerTest() {
-		System.out.println("[INFO] Running toLowerTest");
+		System.out.println("[TEST] Running toLowerTest");
 		assertEquals("hello", JspRunner.toLower("Hello"));
 	}
 
