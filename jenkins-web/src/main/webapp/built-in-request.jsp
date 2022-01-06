@@ -2,16 +2,20 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>BuiltIn Request Object</title>
-</head>
-<body>
-	
-	<h1>Built-In Request Object</h1><br><br>
-	
-	<h2>Request User Agent : <%= request.getHeader("User-Agent") %></h2><br>
-	
-	<h2>Request User Language : <%= request.getLocale() %></h2><br>
-	
-</body>
+	<head>
+		<title>BuiltIn Request Object</title>
+	</head>
+	<body>
+		
+		<jsp:include page="header-html.html"></jsp:include>	
+			
+		<h2>Built-In Request Object</h2><br><br>
+		
+		<h3>Request User Agent : <%= request.getHeader("User-Agent") %></h3><br>
+		
+		<h3>Request User Language : <%= request.getLocale() %></h3><br>
+		
+		<jsp:include page="footer-html.html"></jsp:include>
+		
+	</body>
 </html>
