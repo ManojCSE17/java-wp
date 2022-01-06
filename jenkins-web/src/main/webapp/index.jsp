@@ -11,10 +11,10 @@
 	        
 			    <div class="p-5 mb-4 bg-light rounded-3">
 			    	<div class="container-fluid py-5">
-			    		<div style="float:right;"><i style="color:#B23CFD;font-size:150px;" class="bi bi-hand-index-thumb"></i></div>
+			    		<div style="float:right;"><i style="color:#B23CFD;font-size:150px;" class="bi bi-cursor"></i></div>
 			        	<h1 class="display-5 fw-bold">JWS</h1>
 			        	<p class="col-md-8 fs-4">This web page is created using java web framework.</p>
-			        	<button class="btn btn-info btn-lg" type="button" onclick="window.location.href = 'basic-jsp.jsp';">Quick Start</button>
+			        	<button class="btn btn-outline-secondary btn-lg" type="button" onclick="window.location.href = 'basic-jsp.jsp';">Quick Start</button>
 			    	</div>
 			    </div>
 		
@@ -36,7 +36,7 @@
 		    	</div>
 		    </div>
         </main>
-		
+		<br><br>
 		<jsp:include page="footer-html.html"></jsp:include>
 
 	</body>
