@@ -1,36 +1,43 @@
 <%@page import="com.jenkins.web.app.JspRunner" %>
 
 <html>
-<body>
-	<h2>JSP Basic</h2>
 	
-	Hello time on the server is <%= new java.util.Date() %><br><br>
+	<head>
+		<title>Java Point</title>
+		<style>
+			nav{
+				background-color: #839163;
+				width: 100%;
+			}
+			body{
+				position: relative;
+				background-color: #aab88a;
+				color: #FFF;
+			}
+			footer{
+				position: absolute;
+				margin: 0%;
+				bottom: 0;
+				width: 100%;
+				border: 1px solid black;
+				text-align: center;
+			}
+		</style>
+	</head>
 	
-	Hi there iam <%= new String("Manoj").toUpperCase() %><br><br>
+	<body>
 	
-	25 Divided by 4 is <%= 25/4 %><br><br>
-	
-	Is 75 greater than 69 <%= 75>69 %><br><br>
-	
-	Multiplication table of 2<br><br>
-	
-	<% 
-		for(int i=1;i<=10;i++){
-			out.println(2+" x "+i+" = "+(2*i)+"<br>");
-		}
-	%>
-	
-	<%!
-		String toLower(String w){
-			return w.toLowerCase();
-		}
-	%>
-	
-	<br> Lower case of "Hello" : <%= toLower("Hello") %>
-	
-	<br><br> Lower case of "Hello" with java JspRunner class : <%= JspRunner.toLower("Hello") %>
+		<header>
+			<nav>
+				<a href="basic-jsp.jsp">Basic JSP</a>
+				<a href="built-in-request.jsp">Request Object</a>
+				<a href="#">To be released...</a>
+			</nav>
+		</header>
+		
+		<footer>
+			<h3>&copy; <%= java.time.LocalDateTime.now().getYear() %> javaexample.com</h3>
+		</footer>
 
-	<br><br> <h3>Built-In request object <a href="built-in-request.jsp">Click Here</a></h3> 
-
-</body>
+	</body>
 </html>
