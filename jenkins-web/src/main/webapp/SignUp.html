@@ -17,7 +17,7 @@
 			<nav class="navbar navbar-expand-lg p-2 navbar-light bg-light" >
 				<div class="container-fluid">
 			    	<a class="navbar-brand" href="index.jsp"><strong>Java Web Stack</strong></a>
-					<i style="color:#B23CFD;font-size:40px;" class="bi bi-bug"></i>&nbsp;&nbsp;
+					<i style="color:#B23CFD;font-size:40px;" class="bi bi-cursor"></i>&nbsp;&nbsp;
 								    	
 			    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			      		<span class="navbar-toggler-icon"></span>
@@ -38,26 +38,44 @@
 		<h2 class="p-3 font-monospace">Sign Up</h2>
 		<main class="d-flex justify-content-center">
 			<div class="mt-0 p-5 bg-light col-sm-5 rounded">				
-				<form method="POST" action="">
+				<form method="POST" action="LogInResponse.jsp" class="needs-validation" novalidate>
 					<div class="mb-3 text-start">
 				    	<label for="signupFullName" class="form-label">Full Name</label>
-				    	<input type="text" class="form-control" id="signupFullName" aria-describedby="emailHelp">
+				    	<input type="text" class="form-control" id="signupFullName" required>
+				    	<div class="invalid-feedback">Please provide valid name</div>
 				  	</div>
+					
+					<div class="mb-3 container">
+						<div class="row">
+							<div class="text-start form-check col">
+								<input class="form-check-input" type="radio" name="signupGender" id="signupMale" required>
+							  	<label class="form-check-label" for="signupMale">Male</label>
+							</div>
+							
+							<div class="text-start form-check col">
+								<input class="form-check-input" type="radio" name="signupGender" id="signupFemale">
+							  	<label class="form-check-label" for="signupFemale">Female</label>
+							</div>
+						</div>
+					</div>
 					
 					<div class="mb-3 text-start">
 				    	<label for="signupInputEmail" class="form-label">Email address</label>
-				    	<input type="email" class="form-control" id="signupInputEmail" aria-describedby="emailHelp">
+				    	<input type="email" placeholder="name@company.com" class="form-control" id="signupInputEmail" aria-describedby="emailHelp" required>
 				    	<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+				    	<div class="invalid-feedback">Please provide valid email</div>
 				  	</div>
 				  	
 				  	<div class="mb-3 text-start">
 				    	<label for="signupInputPassword" class="form-label">Password</label>
-				    	<input type="password" class="form-control" id="signupInputPassword">
+				    	<input type="password" class="form-control" id="signupInputPassword" required>
+				    	<div class="invalid-feedback">Password must have atleast one [A-Z] and [a-z] and [0-9] and [@,$,#]</div>
 				  	</div>
 				  	
 				  	<div class="mb-5 text-start">
 				    	<label for="signupConfirmPassword" class="form-label">Confirm Password</label>
-				    	<input type="password" class="form-control" id="signupConfirmPassword">
+				    	<input type="password" class="form-control" id="signupConfirmPassword" required>
+				    	<div class="invalid-feedback">Please make sure your passwords match</div>
 				  	</div>
 				  	
 				  	<div class="text-end">
@@ -66,6 +84,26 @@
 				</form>
 			</div>
 			
+			<script>
+				// Disable form submissions if there are invalid fields
+				(function() {
+				  'use strict';
+				  window.addEventListener('load', function() {
+				    // Get the forms we want to add validation styles to
+				    var forms = document.getElementsByClassName('needs-validation');
+				    // Loop over them and prevent submission
+				    var validation = Array.prototype.filter.call(forms, function(form) {
+				      form.addEventListener('submit', function(event) {
+				        if (form.checkValidity() === false) {
+				          event.preventDefault();
+				          event.stopPropagation();
+				        }
+				        form.classList.add('was-validated');
+				      }, false);
+				    });
+				  }, false);
+				})();
+			</script>
 		</main>
 		<br><br>
 	</body>

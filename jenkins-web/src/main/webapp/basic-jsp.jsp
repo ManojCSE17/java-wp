@@ -5,7 +5,7 @@
 <html>
 	<body>
 	
-		<jsp:include page="header-html.html"></jsp:include>	
+		<jsp:include page="session-header.html"></jsp:include>	
 		
 		<h1 class="text-center fw-light">JSP Basic</h1><br>
 		
