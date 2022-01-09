@@ -1,4 +1,4 @@
-<%@page import="com.jenkins.web.app.JspRunner" %>
+<%@page import="com.jenkins.web.app.JspRunner" isELIgnored="false" %>
 
 <html>
 	
